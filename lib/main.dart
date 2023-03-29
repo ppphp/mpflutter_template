@@ -42,7 +42,7 @@ class MyHomePage extends StatelessWidget {
   Widget _renderPushNextWidget(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.of(context).pushNamed('/second');
+        Navigator.of(context).pushNamed('/second', arguments: {"a": "b"});
       },
       child: Container(
         width: 200,

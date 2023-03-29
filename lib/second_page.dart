@@ -4,6 +4,8 @@ import 'package:mpcore/mpcore.dart';
 class MySecondPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final arguments = ModalRoute.of(context)?.settings.arguments as Map?;
+    print(arguments);
     return MPScaffold(
       name: 'Second',
       body: Center(
